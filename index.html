@@ -7,15 +7,16 @@
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <style>
-     body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
-      padding: 0;
-      margin: 0;
-      color: #333;
-    }
+     /* === Restore body background design from the first version === */
+body {
+  background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
     button {
       font-size: 18px;
       padding: 14px 36px;
@@ -91,6 +92,7 @@
     }
     .card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(0,0,0,0.15); }
     .card h2 { font-size: 26px; margin-bottom: 20px; color: #444; }
+
 
     .info-card {
       --accent: #6c63ff;
@@ -172,10 +174,8 @@
       <div id="lastInterruptionBindurMor">Last Interruption: --</div>
     </div>
   <hr style="margin:20px 0; opacity:.2;">
-</div>
 
-<div class="card">
-    <!-- Katakhali -->
+    <!-- Talaimari -->
     <button id="statusButtonTalaimari">Talaimari</button>
     <div id="timerTalaimari">00:00:00:00</div>
     <div id="buttonAreaTalaimari">
@@ -185,6 +185,7 @@
     </div>
   <hr style="margin:20px 0; opacity:.2;">
   
+  </div>
 
 <!-- "Feeder" Card (before Sultanabad) -->
 <div class="info-card feeder">
@@ -202,7 +203,7 @@
     <div id="lastInterruptionCollege">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Shadharon Bima Card -->
 <div class="card">
@@ -214,7 +215,7 @@
     <div id="lastInterruptionShadharonBima">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- RDA Card -->
 <div class="card">
@@ -226,7 +227,7 @@
     <div id="lastInterruptionRDA">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Shaheb Bazar Card -->
 <div class="card">
@@ -238,7 +239,7 @@
     <div id="lastInterruptionShahebBazar">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Kumarpara Card -->
 <div class="card">
@@ -250,7 +251,7 @@
     <div id="lastInterruptionKumarpara">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Biddut Vobon Card -->
 <div class="card">
@@ -262,7 +263,7 @@
     <div id="lastInterruptionBiddutVobon">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Kolabagan Card -->
 <div class="card">
@@ -274,7 +275,7 @@
     <div id="lastInterruptionKolabagan">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Medical Card -->
 <div class="card">
@@ -286,7 +287,7 @@
     <div id="lastInterruptionMedical">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Poromanu Card -->
 <div class="card">
@@ -298,7 +299,7 @@
     <div id="lastInterruptionPoromanu">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- BTV Card -->
 <div class="card">
@@ -310,7 +311,7 @@
     <div id="lastInterruptionBTV">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Circuit House Card -->
 <div class="card">
@@ -322,7 +323,7 @@
     <div id="lastInterruptionCircuitHouse">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 <!-- Novo Theater Card -->
 <div class="card">
@@ -334,7 +335,7 @@
     <div id="lastInterruptionNovoTheater">Last Interruption: --</div>
   </div>
 </div>
-<hr style="margin:20px 0; opacity:.2;">
+
 
 
 <br>
