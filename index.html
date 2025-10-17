@@ -135,8 +135,7 @@ body {
 <body>
 
 </div>
-<div id="pageContent" style="display: none;">
-  <!-- Your HTML content starts here -->
+
 
   <!-- Top "Source" Card -->
   <div class="info-card source">
@@ -846,43 +845,8 @@ body {
 
 </script>
 
-</div>
 
-<script>
-// Define the password and the 8-hour time limit
-const correctPassword = "bm4";
-const passwordKey = "password_timestamp";
-const maxAge =  1000; // 8 hours in milliseconds
-
-// Check if the password is valid (entered within the last 8 hours)
-function checkPassword() {
-  const lastPasswordTimestamp = localStorage.getItem(passwordKey);
-  const currentTime = new Date().getTime();
-
-  if (lastPasswordTimestamp && (currentTime - lastPasswordTimestamp <= maxAge)) {
-    document.getElementById('pageContent').style.display = 'block';
-  } else {
-    promptForPassword();
-  }
-}
-
-function promptForPassword() {
-  let passwordInput = "";
-  while (passwordInput !== correctPassword) {
-    passwordInput = prompt("Enter the password to access:");
-    if (passwordInput === correctPassword) {
-      const currentTime = new Date().getTime();
-      localStorage.setItem(passwordKey, currentTime);
-
-      document.getElementById('pageContent').style.display = 'block';
-    } else {
-      alert("Incorrect password. Please try again.");
-    }
-  }
-}
-
-window.onload = checkPassword;
-</script>
 
 </body>
 </html>
+
